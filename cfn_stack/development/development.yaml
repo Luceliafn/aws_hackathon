@@ -61,7 +61,7 @@ Parameters:
   GitURL:
     Type: String
     Description: Initial repository for web application
-    Default: https://github.com/aws-samples/streamlit-deploy.git
+    Default: https://github.com/Luceliafn/aws_hackathon.git
   
   Cpu:
     Description: "CPU of Fargate Task. Make sure you put valid Memory and CPU pair, refer: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-cpu:~:text=requires%3A%20Replacement-,Cpu,-The%20number%20of"
