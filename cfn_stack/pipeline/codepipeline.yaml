@@ -59,7 +59,7 @@ Parameters:
   GitURL:
     Type: String
     Description: Initial repository for basic Hello World application
-    Default: https://github.com/aws-samples/streamlit-deploy.git
+    Default: https://github.com/Luceliafn/aws_hackathon.git
 
   DeployVPCInfrastructure:
     Description: Select false if you already have infrastructure.yaml nested stack deployed in this region
