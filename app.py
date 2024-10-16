@@ -10,9 +10,6 @@ REGION = 'us-west-2'
 if "messages" not in st.session_state:
     st.session_state['messages'] = []
 
-if 'num_processo' not in st.session_state:
-    st.session_state['num_processo'] = None
-
 if 'agent_client' not in st.session_state:
     st.session_state['agent_client'] = boto3.client('bedrock-agent-runtime', region_name=REGION)
 
