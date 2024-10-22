@@ -3,7 +3,11 @@ import boto3
 import json
 import logging
 import uuid
+from app_lib import *
 logger = logging.getLogger(__name__)
+
+if not check_password():
+    st.stop()
 
 REGION = 'us-west-2'
 
@@ -19,7 +23,6 @@ if 'session_id' not in st.session_state:
 # escolha fixa de agente e alias
 st.session_state['agentId'] = 'OIA2DP7SBI'
 st.session_state['aliasId'] = 'UFEVWBMLEC'
-
 
 def gera_resposta_agente(input_text):
 
